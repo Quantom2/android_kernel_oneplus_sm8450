@@ -3,7 +3,7 @@
 
 #define AW210XX_I2C_NAME "aw210xx_led"
 
-#if AW_DEBUG
+#ifdef AW_DEBUG
 #define AW_LOG(fmt, args...)	pr_info("[%s] %s %d: " fmt, AW210XX_I2C_NAME, \
 		__func__, __LINE__, ##args)
 #else

@@ -1172,10 +1172,6 @@ static int aw210xx_i2c_probe(struct i2c_client *i2c, const struct i2c_device_id 
 		goto err_sysfs;
 	}
 
-	/* hardware to sleep by default */
-	aw210xx_hw_enable(aw210xx, false);
-	AW_LOG("probe completed!\n");
-
 	return 0;
 
 err_sysfs:
